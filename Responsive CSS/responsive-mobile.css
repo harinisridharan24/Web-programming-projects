@@ -1,0 +1,23 @@
+  
+@media screen and (max-width: 700px) {
+
+   .content,
+   .content-body {
+     padding: 0;
+   }
+
+   .content-body {
+       padding: 0 5px;
+   }
+
+   .content-left,
+   .content-right {
+     float: none;
+     width: 90%;
+   }
+   .content-right {
+       margin-left: 0;
+   }
+
+
+ }

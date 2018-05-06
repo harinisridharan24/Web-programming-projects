@@ -1,0 +1,215 @@
+/* 
+**  css file for common page stylings applied across all pages
+**  Harini Sridharan
+*/
+
+body {
+  margin: 0px;
+  background: #fbfbfb;
+}
+
+header, footer {
+  width: 100%;
+}
+
+header {
+  height: auto;
+  float: left;
+  width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+.site-title {
+  font-weight: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  float: left;
+  width: 80%;
+  font-size: 18px;
+}
+
+.site-title .title,
+.site-title .title:hover,
+.site-title .title:focus,
+.site-title .title:active {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.fleft {
+  float: left;
+}
+
+nav {
+  margin-left: 30px;
+}
+
+.header-link-wrapper {
+  padding: 5px;
+}
+
+.header-link-wrapper a{
+  padding: 10px;
+  color: #fff;
+}
+
+nav a,
+nav a:hover,
+nav a:focus,
+nav a:active{
+  text-decoration: none;
+}
+
+nav a:hover{
+  background: #fff;
+  color: #133783;
+  cursor: pointer;
+}
+
+.content {
+  max-width: 1024px;
+  margin: 20px auto;
+  position: relative;
+  padding: 0 20px;
+} 
+
+.register-login {
+  margin: 0px auto;
+  max-width: 400px;
+  background: #f6f6f6;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.register-login tbody,
+.register-login tr {
+  background-color: #f6f6f6 !important;
+}
+
+.register-login tr {
+  line-height: 2em;
+}
+
+.register-login td {
+    padding: 0 0 0.5rem;
+}
+
+
+td.form-label,
+td.form-input {
+  display: block;
+  width: 100%;
+  line-height: 1.4em;
+}
+
+td.form-label {
+  line-height: 1.4em;
+}
+
+
+.error {
+  margin: 5px 0;
+}
+
+.required,
+.error {
+  color: red;
+}  
+
+input[type=submit],
+.button {
+  padding:10px 20px; 
+  background:#269ae6; 
+  border:0 none;
+  cursor:pointer;
+  border-radius: 5px; 
+  color: #fff;
+  font-size: 16px;
+} 
+
+.button.danger {
+  background: red;
+}
+
+input[type=text]:focus,
+textarea:focus {
+  border-color:#269ae6;
+}
+
+i.large {
+  font-size: 30px;
+}
+
+i.medium {
+  font-size: 24px;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1100;
+  display: none;
+  background-color: rgba(10, 10, 10, 0.45098);
+}
+
+.loader-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  z-index: 1101;
+}
+/* styles for animating the loading symbol */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.reveal h2 {
+  border-bottom: 1px solid #ccc;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  background: #e6e6e6;
+  padding: 10px;
+}
+
+#copyright {
+  float: left;
+}
+
+#html-valid,
+#css-valid {
+  float: right;
+}
+
+@media print, screen and (max-width: 600px) {
+  #copyright,
+  #html-valid,
+  #css-valid {
+    float: none;
+    display: block;
+  }
+}

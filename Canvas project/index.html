@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <title>Assignment 4 - Canvas</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale = 1" />
+  <meta name="Author" content="Harini Sridharan" />
+  <meta name="generator" content="emacs" />
+  <link rel="shortcut icon" href="/~kilroy/Images/KilroyBrick.png" />
+  <script src="data.js" type="text/javascript"></script>
+  <script src="petrolprices.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://momentjs.com/downloads/moment.min.js"></script>
+  <link rel="stylesheet" href="tagline.css" />
+  <style type="text/css">
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="page-title">
+      <label>Harini's Website</label>
+    </div>
+    <nav>
+      <a target="_blank" href="../hw1">Responsive Web Page</a>      
+      <a target="_blank" href="../Scrapers">Scrapers</a>
+      <a target="_blank" href="../Canvas">Canvas</a>
+    </nav>
+  </header>
+
+  <section class="content-body">
+      <h3 style="text-align:center">Graph showing weekly average prices of gas in selected city in New York state since Feb 2016  </h3>
+      <div class="select-option">
+        <label> Choose City:</label>
+        <select id="choose-city" onchange="getCityValue()">
+          <option value="10">Albany</option>
+          <option value="11">Bingamton</option>
+          <option value="12">Buffalo</option>
+          <option value="13">Nassau</option>
+          <option value="14">New York City</option>
+          <option value="15">Rochester</option>
+          <option value="16">Syracuse</option>
+          <option value="17">Utica</option>
+        </select>
+      </div>
+      <div class="canvas-wrapper">
+        <canvas id="petrol-prices-graph" width="840" height="460">
+          This text is displayed if your browser does not support HTML5 Canvas.
+        </canvas>
+        <div id="priceData" style="position: absolute;"></div>
+      </div>
+
+      <h6 style="text-align:center">Source: <a href="https://catalog.data.gov/dataset/gasoline-retail-prices-weekly-average-by-region-beginning-2007" target="_blank">Gas Prices in NY State</a></h6>
+
+
+  </section>
+
+
+
+<!-- This is how to put in a comment.  Do NOT try to put a
+     double-hyphen inside a comment. -->
+
+
+<!-- <div id="tagline">
+ <a href="http://elvis.rowan.edu/~kilroy/" 
+    title="Link to my home page">
+    <img src="/~kilroy/Images/KilroyBrick.png" alt="" />D. Provine
+ </a>-->
+<div class="clear"></div>
+<footer>
+  <div class="footer-content">
+    <div style="float:left;padding-top:10px;">
+      <a href="#"> Harini Sridharan</a>
+    </div>
+    <span style="float: right;">
+    <a href="http://validator.w3.org/check/referer"><img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88"></a> 
+    <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"> </a>
+  </span>
+  </div>
+
+</footer>
+
+<script>
+    getGasPricesNY(10)
+</script>
+
+</body>
+</html>

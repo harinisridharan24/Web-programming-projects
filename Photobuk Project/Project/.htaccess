@@ -1,0 +1,4 @@
+# tell web browsers to just show .sql files without downloading
+# or choosing applications
+
+AddType text/plain .sql

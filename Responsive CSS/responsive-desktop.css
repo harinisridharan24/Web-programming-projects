@@ -1,0 +1,15 @@
+  @media screen and (max-width: 1024px) {
+
+   .content-left {
+     width: 50%;
+   }
+
+ }
+
+   @media screen and (min-width: 701px) and (max-width: 850px) {
+
+   .content-left {
+     width: 40%;
+   }
+
+ }
